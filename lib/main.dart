@@ -34,10 +34,24 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Colors.transparent, elevation: 0),
       body: Align(
         alignment: Alignment.topCenter,
-        child: Image(
-          image: AssetImage("assets/logo.png"),
-          width: 200, // set your desired width
-          height: 200, // set your desired height
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image(
+              image: AssetImage("assets/logo.png"),
+              width: 200, // set your desired width
+              height: 200, // set your desired height
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Login',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.red,
+              ),
+            ),
+          ],
         ),
       ),
     );
