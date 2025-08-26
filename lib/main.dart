@@ -32,7 +32,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.transparent, elevation: 0),
-      body: Center(child: Image(image: AssetImage("assets/logo.png"))),
+      body: Align(
+        alignment: Alignment.topCenter,
+        child: Image(
+          image: AssetImage("assets/logo.png"),
+          width: 200, // set your desired width
+          height: 200, // set your desired height
+        ),
+      ),
     );
   }
 }
